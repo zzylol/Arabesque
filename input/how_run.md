@@ -10,11 +10,11 @@ project: Arabesque
 
 ## Helper scripts and configuration files
 You can find an execution-helper script and several configuration files for the different algorithms under the [scripts
-folder in the repository](https://github.com/Qatar-Computing-Research-Institute/Arabesque/tree/master/scripts):
+folder in the repository](https://github.com/siganos/Arabesque/tree/master/scripts):
 
 * `run_arabesque.sh` - Launcher for arabesque executions. Takes as parameters one or more yaml files describing the configuration of the execution to be run. Configurations are applied in sequence with configurations in subsequent yaml files overriding entries of previous ones.
 * `cluster.yaml` - File with configurations related to the cluster and, so, common to all algorithms: number of workers, number of threads per worker, number of partitions, etc.
-* `<algorithm>.yaml` - Files with configurations related to particular algorithm executions using as input the [provided citeseer graph](https://github.com/Qatar-Computing-Research-Institute/Arabesque/tree/master/data):
+* `<algorithm>.yaml` - Files with configurations related to particular algorithm executions using as input the [provided citeseer graph](https://github.com/siganos/Arabesque/tree/master/data):
   * `fsm.yaml` - Run frequent subgraph mining over the citeseer graph.
   * `cliques.yaml` - Run clique finding over the citeseer graph.
   * `motifs.yaml` - Run motif counting over the citeseer graph.
@@ -81,4 +81,4 @@ Input format
 
 Vertex ids are expected to be sequential integers between 0 and (total number of vertices - 1).
 
-You can examine our sample citeseer graphs [here](https://github.com/Qatar-Computing-Research-Institute/Arabesque/tree/master/data).
+You can examine our sample citeseer graphs [here](https://github.com/siganos/Arabesque/tree/master/data).

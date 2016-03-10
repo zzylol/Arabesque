@@ -4,7 +4,7 @@ project: Arabesque
 
 # Github repo
 
-The source code can be downloaded from [Github](https://github.com/Qatar-Computing-Research-Institute/Arabesque)
+The source code can be downloaded from [Github](https://github.com/siganos/Arabesque)
 
 Arabesque is licensed under Apache 2.0.
 
@@ -22,4 +22,4 @@ To run any of the example applications, refer to [our user guide](user_guide.htm
 
 # Preconfigured Maven project
 
-If you want to start developing your own graph mining implementations on top of Arabesque, the easiest way to achieve this is by forking our [Arabesque-Skeleton](https://github.com/Qatar-Computing-Research-Institute/Arabesque-Skeleton) project and follow the instructions on the README file.
+If you want to start developing your own graph mining implementations on top of Arabesque, the easiest way to achieve this is by forking our [Arabesque-Skeleton](https://github.com/siganos/Arabesque-Skeleton) project and follow the instructions on the README file.

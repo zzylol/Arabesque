@@ -23,9 +23,9 @@ We are also working on the system's Javadocs. We'll release them soon.
 ## How to Use
 Arabesque can be used in one of 2 ways:
 * **Standalone** - If you simply want to test/execute one of the example algorithms included in Arabesque, you can simply download the JAR file from our [download page](download.html) and use the supporting execution scripts to run your desired algorithm.
-* **Framework** - If you want to code your own graph mining algorithm on top of Arabesque, the easiest way to accomplish this is by forking our [Arabeque skeleton project](https://github.com/Qatar-Computing-Research-Institute/Arabesque-Skeleton) and follow the instructions in the README file.
+* **Framework** - If you want to code your own graph mining algorithm on top of Arabesque, the easiest way to accomplish this is by forking our [Arabeque skeleton project](https://github.com/siganos/Arabesque-Skeleton) and follow the instructions in the README file.
 
 ## Source code
 Arabesque is open-sourced under the Apache 2.0 license.
 
-The source code can be accessed from [github](https://github.com/Qatar-Computing-Research-Institute/Arabesque).
+The source code can be accessed from [github](https://github.com/siganos/Arabesque).
