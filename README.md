@@ -87,3 +87,70 @@ cd $PROJECT_PATH
 git remote rename origin upstream
 git remote add origin $YOUR_REPO_URL
 ```
+
+
+## issue
+```
+ bash run_arabesque.sh cluster.yaml cliques.yaml
+21/11/08 19:13:57 INFO conf.YamlConfiguration: Loading settings from jar:file:/users/zz_y/Arabesque/scripts/arabesque-1.0-BETA-jar-with-dependencies.jar!/arabesque.default.yaml
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Loading settings from file:/users/zz_y/Arabesque/scripts/cluster.yaml
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Loading settings from file:/users/zz_y/Arabesque/scripts/cliques.yaml
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: giraph.nettyRequestEncoderBufferSize
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [giraph.nettyRequestEncoderBufferSize] to [1048576] in GiraphConfiguration
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: giraph.nettyServerThreads
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [giraph.nettyServerThreads] to [32] in GiraphConfiguration
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: giraph.SplitMasterWorker
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [giraph.SplitMasterWorker] to [false] in GiraphConfiguration
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: giraph.useNettyPooledAllocator
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [giraph.useNettyPooledAllocator] to [true] in GiraphConfiguration
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: arabesque.clique.maxsize
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [arabesque.clique.maxsize] to [4] in GiraphConfiguration
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: giraph.nettyClientExecutionThreads
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [giraph.nettyClientExecutionThreads] to [32] in GiraphConfiguration
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: giraph.nettyClientThreads
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [giraph.nettyClientThreads] to [32] in GiraphConfiguration
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: giraph.channelsPerServer
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [giraph.channelsPerServer] to [4] in GiraphConfiguration
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: giraph.useBigDataIOForMessages
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [giraph.useBigDataIOForMessages] to [true] in GiraphConfiguration
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Invalid YAML key, assuming giraph -ca: giraph.useNettyDirectMemory
+21/11/08 19:13:58 INFO conf.YamlConfiguration: Setting custom argument [giraph.useNettyDirectMemory] to [true] in GiraphConfiguration
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/zz_y/Arabesque/scripts/arabesque-1.0-BETA-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+21/11/08 19:13:58 INFO Configuration.deprecation: mapreduce.job.counters.limit is deprecated. Instead, use mapreduce.job.counters.max
+21/11/08 19:13:58 INFO Configuration.deprecation: mapred.job.map.memory.mb is deprecated. Instead, use mapreduce.map.memory.mb
+21/11/08 19:13:58 INFO Configuration.deprecation: mapred.job.reduce.memory.mb is deprecated. Instead, use mapreduce.reduce.memory.mb
+21/11/08 19:13:58 INFO Configuration.deprecation: mapred.map.tasks.speculative.execution is deprecated. Instead, use mapreduce.map.speculative
+21/11/08 19:13:58 INFO Configuration.deprecation: mapreduce.user.classpath.first is deprecated. Instead, use mapreduce.job.user.classpath.first
+21/11/08 19:13:58 INFO Configuration.deprecation: mapred.map.max.attempts is deprecated. Instead, use mapreduce.map.maxattempts
+21/11/08 19:13:58 INFO job.GiraphJob: run: Since checkpointing is disabled (default), do not allow any task retries (setting mapred.map.max.attempts = 1, old value = 4)
+21/11/08 19:13:58 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+21/11/08 19:13:58 INFO client.RMProxy: Connecting to ResourceManager at master/10.10.1.1:8032
+21/11/08 19:13:58 WARN bsp.BspOutputFormat: checkOutputSpecs: ImmutableOutputCommiter will not check anything
+21/11/08 19:13:59 INFO mapreduce.JobSubmitter: number of splits:1
+21/11/08 19:13:59 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1636422893765_0003
+21/11/08 19:14:00 INFO impl.YarnClientImpl: Submitted application application_1636422893765_0003
+21/11/08 19:14:00 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1636422893765_0003/
+21/11/08 19:14:00 INFO job.GiraphJob: Tracking URL: http://master:8088/proxy/application_1636422893765_0003/
+21/11/08 19:14:00 INFO job.GiraphJob: Waiting for resources... Job will start only when it gets all 2 mappers
+21/11/08 19:14:14 INFO job.HaltApplicationUtils$DefaultHaltInstructionsWriter: writeHaltInstructions: To halt after next superstep execute: 'bin/halt-application --zkServer c220g5-111317.wisc.cloudlab.us:22181 --zkNode /_hadoopBsp/job_1636422893765_0003/_haltComputation'
+21/11/08 19:14:14 INFO mapreduce.Job: Running job: job_1636422893765_0003
+21/11/08 19:14:15 INFO mapreduce.Job: Job job_1636422893765_0003 running in uber mode : false
+21/11/08 19:14:15 INFO mapreduce.Job:  map 100% reduce 0%
+21/11/08 19:14:16 INFO mapreduce.Job: Job job_1636422893765_0003 failed with state FAILED due to: Task failed task_1636422893765_0003_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+21/11/08 19:14:16 INFO mapreduce.Job: Counters: 8
+	Job Counters
+		Failed map tasks=1
+		Launched map tasks=1
+		Other local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=8908
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=8908
+		Total vcore-seconds taken by all map tasks=8908
+		Total megabyte-seconds taken by all map tasks=9121792
+  ```
